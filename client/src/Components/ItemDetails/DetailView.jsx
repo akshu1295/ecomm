@@ -59,7 +59,7 @@ const data = {
 
 const DetailView = ({ history, match }) => {
     const classes = useStyles();
-    const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png'
+    
     // const [ product, setProduct ] = useState(data);
     // const [ loading, setLoading ] = useState(false);
     // const { id } = useParams();
@@ -100,7 +100,7 @@ const DetailView = ({ history, match }) => {
                         <Typography>{product.title.longTitle}</Typography>
                         <Typography className={clsx(classes.greyTextColor, classes.smallText)} style={{marginTop: 5}}>
                             8 Ratings & 1 Reviews
-                            <span><img src={fassured} style={{width: 77, marginLeft: 20}} /></span>
+                           
                         </Typography>
                         <Typography>
                             <span className={classes.price}>₹{product.price.cost}</span>&nbsp;&nbsp;&nbsp; 

@@ -9,8 +9,8 @@ const useStyle = makeStyles({
         maxWidth: 'unset !important'
     },
     image: {
-        backgroundImage: `url(${'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png'})`,
-        background: '#2874f0',
+        
+        background: '#F0B4A9',
         backgroundPosition: 'center 85%',
         backgroundRepeat: 'no-repeat',
         height: '70vh',
@@ -27,12 +27,12 @@ const useStyle = makeStyles({
         flex: 1,
         flexDirection: 'column',
         '& > *': {
-            marginTop: 20
+            marginTop: 10
         }
     },
     loginbtn: {
         textTransform: 'none',
-        background: '#FB641B',
+        background: '#d8a298',
         color: '#fff',
         height: 48,
         borderRadius: 2
@@ -40,7 +40,7 @@ const useStyle = makeStyles({
     requestbtn: {
         textTransform: 'none',
         background: '#fff',
-        color: '#2874f0',
+        color: '#d8a298',
         height: 48,
         borderRadius: 2,
         boxShadow: '0 2px 4px 0 rgb(0 0 0 / 20%)'
@@ -52,7 +52,7 @@ const useStyle = makeStyles({
     createText: {
         margin: 'auto 0 5px 0',
         textAlign: 'center',
-        color: '#2874f0',
+        color: '#d8a298',
         fontWeight: 600,
         fontSize: 14,
         cursor: 'pointer'
@@ -89,7 +89,7 @@ const accountInitialValues = {
     signup: {
         view: 'signup',
         heading: "Looks like you're new here",
-        subHeading: 'Signup to get started'
+        subHeading: 'Sign up to get started'
     }
 }
 
@@ -153,11 +153,11 @@ const LoginDialog = ({ open, setOpen, setAccount }) => {
                             <TextField onChange={(e) => onValueChange(e)} name='username' label='Enter Email/Mobile number' />
                             { error && <Typography className={classes.error}>Please enter valid Email ID/Mobile number</Typography> }
                             <TextField onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
-                            <Typography className={classes.text}>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Typography>
+                            <Typography className={classes.text}>By continuing, you agree to FineLiving's Terms of Use and Privacy Policy.</Typography>
                             <Button className={classes.loginbtn} onClick={() => loginUser()} >Login</Button>
                             <Typography className={classes.text} style={{textAlign:'center'}}>OR</Typography>
                             <Button className={classes.requestbtn}>Request OTP</Button>
-                            <Typography className={classes.createText} onClick={() => toggleSignup()}>New to Flipkart? Create an account</Typography>
+                            <Typography className={classes.createText} onClick={() => toggleSignup()}>New to FineLiving? Create an account</Typography>
                         </Box> : 
                         <Box className={classes.login}>
                             <TextField onChange={(e) => onInputChange(e)} name='firstname' label='Enter Firstname' />
@@ -165,7 +165,7 @@ const LoginDialog = ({ open, setOpen, setAccount }) => {
                             <TextField onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
                             <TextField onChange={(e) => onInputChange(e)} name='email' label='Enter Email' />
                             <TextField onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
-                            <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter Phone' />
+                            <TextField onChange={(e) => onInputChange(e)} name='phone' label='Enter Mobile' />
                             <Button className={classes.loginbtn} onClick={() => signupUser()} >Continue</Button>
                         </Box>
                     }

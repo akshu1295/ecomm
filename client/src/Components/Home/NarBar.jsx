@@ -16,10 +16,10 @@ const useStyle = makeStyles(theme => ({
         textAlign: 'center'
     },
     image: {
-        width: 64
+        width: 50
     },
     text: {
-        fontSize: 14,
+        fontSize: 13,
         fontWeight: 600,
         fontFamily: 'inherit'
     }

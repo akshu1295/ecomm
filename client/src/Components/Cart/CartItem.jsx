@@ -40,7 +40,7 @@ const useStyle = makeStyles({
 const CartItem = ({ item, removeItemFromCart }) => {
     console.log(item)
     const classes = useStyle();
-    const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png';
+    
 
     return (
         <Card className={classes.component}>
@@ -51,7 +51,7 @@ const CartItem = ({ item, removeItemFromCart }) => {
             <Box className={classes.mid}>
                 <Typography>{addEllipsis(item.title.longTitle)}</Typography>
                 <Typography className={clsx(classes.greyTextColor, classes.smallText)} style={{ marginTop: 10 }}>Seller:RetailNet
-                    <span><img src={fassured} style={{ width: 50, marginLeft: 10 }} /></span>
+                   
                 </Typography>
                 <Typography style={{margin: '20px 0'}}>
                     <span className={classes.price}>₹{item.price.cost}</span>&nbsp;&nbsp;&nbsp;

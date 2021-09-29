@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 const ImageURL = [
     'https://rukminim1.flixcart.com/flap/960/960/image/2f30db9425df5cec.jpg?q=50',
-    'https://rukminim1.flixcart.com/flap/960/960/image/084789479074d2b2.jpg',
+    'https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1631159612066-53b210.jpeg?q=50',
     'https://rukminim1.flixcart.com/flap/960/960/image/1ce0c4c1fb501b45.jpg?q=50'
 ];
 
